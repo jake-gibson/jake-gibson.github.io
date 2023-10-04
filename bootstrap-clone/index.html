@@ -1,0 +1,302 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Public+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- CODE HERE-->
+
+  <!-- navigation bar -->
+  <header class="nav-bar">
+    <img src="images/bootstrap-logo-white.svg" id="white-logo">
+    <nav>
+      <ul class="nav links" id="nav-links">
+        <li>Docs</li>
+        <li>Examples</li>
+        <li>Icons</li>
+        <li>Themes</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+    <input type="search" id="search-bar" placeholder="Search">
+    <nav class="utilities">
+      <span>
+        <ul id="apps">
+          <li><img src="images/github.png"></li>
+          <li><img src="images/twitter.png"></li>
+          <li><img src="images/collective.png"></li>
+        </ul>
+      </span>
+      <span><select id="version">
+          <option value="53x">v5.3</option>
+          <option value="523">v5.2.3</option>
+          <option value="513">v5.1.3</option>
+          <option value="502">v5.0.2</option>
+          <hr>
+          <option value="46x">v4.6.x</option>
+          <option value="341">v3.4.1</option>
+          <option value="232">v2.3.2</option>
+        </select></span>
+      <span><select id="brightness">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="auto">Auto</option>
+        </select></span>
+    </nav>
+  </header>
+
+  <img id="background-cover" src="images/background_splash.png">
+  <!-- grid layout -->
+  <div class="grid-container">
+    <div class="grid-item grid-item-1">
+      <div class="version-description">
+        <button id="version-button"><b>New in v5.3</b></button>
+        <button id="version-para">Color mode support, expanded color palette, and more!</button>
+      </div>
+      <div>
+        <img src="images/bootstrap-logo-shadow.png" id="logopurple">
+      </div>
+      <div>
+        <h1>Build fast, responsive sites with Bootstrap</h1>
+      </div>
+
+      <div>
+        <h3>Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt
+          grid system
+          and components, and bring projects to life with powerful JavaScript plugins.</h3>
+      </div>
+      <div class="info-button">
+        <button id="npm-copy">$ npm i bootstrap@5.3.2</button>
+        <button id="read_docs">Read the docs</button>
+      </div>
+      <div class="downloads">
+        <p>Currently v5.3.2 • <u>Download</u> • <u>All Releases</u></p>
+      </div>
+      <div class="ad-box">
+        <img src="images/ad-pic.png">
+        <p>The New WebDeveloper.com is now here. Claim your @ Username now before it's gone.<br><br>ads via Carbon.com
+        </p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-2">
+      <div id="get-started">
+        <div><img src="images/arrows.png"></div>
+        <div>
+          <h1>Get started any way you want</h1>
+        </div>
+        <div>
+          <h3>Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the
+            source
+            code.</h3>
+        </div>
+        <div>
+          <p>Read the installation docs</p>
+          <img src="images/bluearrow.png">
+        </div>
+      </div>
+    </div>
+    <div class="grid-item grid-item-3 regular">
+      <div><img src="images/box.png"></div>
+      <div>
+        <h3>Install via package manager</h3>
+      </div>
+      <div>
+        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed
+          installs
+          don’t include documentation or our full build scripts. You can also <a href="/">use any demo from our Examples
+            repo</a> to
+          quickly
+          jumpstart Bootstrap projects.</p>
+      </div>
+      <div class="codebox">
+        <p>$ npm install bootstrap@5.3.2</p>
+      </div>
+      <div class="codebox">
+        <p>$ gem install bootstrap -v 5.3.2</p>
+      </div>
+      <div>
+        <p><a href="/">Read our installation docs</a> for more info and additional package managers.</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-4 regular">
+      <div><img src="images/world.png"></div>
+      <div>
+        <h3>Include via CDN</h3>
+      </div>
+      <div>
+        <p>When you only need to include Bootstrap’s compiled CSS or JS, you can use <a href="/">jsDelivr</a>. See it in
+          action with our
+          simple
+          <a href="/">quick start</a>, or <a href="/">browse the examples</a> to jumpstart your next project. You can
+          also choose to include Popper and
+          our JS
+          <a href="/">separately</a>.
+        </p>
+      </div>
+      <div class="codebox">
+        <p>link href="https://cdn.jsdelivr.net/npm/bootstrap</p>
+      </div>
+      <div class=" codebox">
+        <p>script src="https://cdn.jsdelivr.net/npm/bootstrap@5</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-5">
+      <div>
+        <h3>Read our getting started guides</h3>
+      </div>
+      <div>
+        <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+      </div>
+      <div id="frameworks">
+        <span><img src="images/webpack.svg">
+          <h5>Webpack</h5>
+        </span>
+        <span><img src="images/parcel.png">
+          <h5>Parcel</h5>
+        </span>
+        <span><img src="images/vite.svg">
+          <h5>Vite</h5>
+        </span>
+      </div>
+    </div>
+    <div class="grid-item grid-item-6 intro">
+      <div><img src="images/protractor.png"></div>
+      <div>
+        <h1>Customize everything with Sass</h1>
+      </div>
+      <div>
+        <h3>Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need,
+          enable global
+          options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        </h3>
+      </div>
+      <div>
+        <p>Learn more about customizing</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-7 regular">
+      <div><img src="images/box.png"></div>
+      <div>
+        <h3>Install via package manager</h3>
+      </div>
+      <div>
+        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed
+          installs
+          don’t include documentation or our full build scripts. You can also <a href="/">use any demo from our Examples
+            repo</a> to
+          quickly
+          jumpstart Bootstrap projects.</p>
+      </div>
+      <div class="codebox">
+        <p>$ npm install bootstrap@5.3.2</p>
+      </div>
+      <div class="codebox">
+        <p>$ gem install bootstrap -v 5.3.2</p>
+      </div>
+      <div>
+        <p><a href="/">Read our installation docs</a> for more info and additional package managers.</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-8 regular">
+      <div><img src="images/box.png"></div>
+      <div>
+        <h3>Install via package manager</h3>
+      </div>
+      <div>
+        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed
+          installs
+          don’t include documentation or our full build scripts. You can also <a href="/">use any demo from our Examples
+            repo</a> to
+          quickly
+          jumpstart Bootstrap projects. </p>
+      </div>
+      <div class="codebox">
+        <p>$ npm install bootstrap@5.3.2</p>
+      </div>
+      <div class="codebox">
+        <p>$ gem install bootstrap -v 5.3.2</p>
+      </div>
+      <div>
+        <p><a href="/">Read our installation docs</a> for more info and additional package managers.</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-9 intro">
+      <div><img src="images/brackets.png"></div>
+      <div>
+        <h1>Build and extend in real-time with CSS variables</h1>
+      </div>
+      <div>
+        <h3>Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles,
+          individual
+          components, and even utilities. We provide dozens of variables for colors, font styles, and more at a :root
+          level for
+          use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be
+          modified.</h3>
+      </div>
+      <div>
+        <p>Learn more about CSS variables</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-10 regular">
+      <div><img src="images/box.png"></div>
+      <div>
+        <h3>Install via package manager</h3>
+      </div>
+      <div>
+        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed
+          installs
+          don’t include documentation or our full build scripts. You can also <a href="/">use any demo from our Examples
+            repo</a> to
+          quickly
+          jumpstart Bootstrap projects.</p>
+      </div>
+      <div class="codebox">
+        <p>$ npm install bootstrap@5.3.2</p>
+      </div>
+      <div class="codebox">
+        <p>$ gem install bootstrap -v 5.3.2</p>
+      </div>
+      <div>
+        <p><a href="/">Read our installation docs</a> for more info and additional package managers.</p>
+      </div>
+    </div>
+    <div class="grid-item grid-item-11 regular">
+      <div><img src="images/box.png"></div>
+      <div>
+        <h3>Install via package manager</h3>
+      </div>
+      <div>
+        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed
+          installs
+          don’t include documentation or our full build scripts. You can also <a href="/">use any demo from our Examples
+            repo</a> to
+          quickly
+          jumpstart Bootstrap projects.</p>
+      </div>
+      <div class="codebox">
+        <p>$ npm install bootstrap@5.3.2</p>
+      </div>
+      <div class="codebox">
+        <p>$ gem install bootstrap -v 5.3.2</p>
+      </div>
+      <div>
+        <p><a href="/">Read our installation docs</a> for more info and additional package managers.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
